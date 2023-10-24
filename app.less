@@ -1,0 +1,35 @@
+.done {
+  font-weight: bold;
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+.item {
+  padding: 0 100px;
+}
+
+.check {
+  margin-right: 20px;
+}
+
+.popup {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .content {
+    border-radius: 10px;
+    transition-duration: 1s;
+    background-color: rgb(255, 255, 255);
+    animation-name: appear;
+    animation-duration: 0.3s;
+  }
+
+  @keyframes appear {
+    from {translate: 0 -50vh}
+    to {translate: 0}
+  }
+}
